@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="João Dos Santos Silva">
+  <meta name="description" content="Portfolio João Dos Santos Silva front-end Developer">
+  <meta name="keywords" content="portfolio, html, front-end, development, css, javascript">
+  <title>João Dos Santos Siva</title>
+  <link rel="icon" href="./icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="https://kit.fontawesome.com/1102d7f4b7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav data-menu="suave">
+      <p><a href="#home">&lsaquo;JSS&rsaquo;</a></p>
+      <button data-menu="button" aria-controls="menu"></button>
+      <ul data-menu="list" id="menu">
+        <a href="#home">
+          <li>Home</li>
+        </a>
+        <a href="#sobre">
+          <li>About</li>
+        </a>
+        <a href="#experiencia">
+          <li>Experiences</li>
+        </a>
+        <a href="#projetos">
+          <li>Projects</li>
+        </a>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="principal" id="home">
+      <div class="principal__left">
+        <h1>Hi, I am</h1>
+        <span class="principal__sentence"></span>
+        <span class="principal__input-cursor"></span>
+        <h1>Web Developer</h1>
+        <div class="principal__botao">
+          <a href="https://www.linkedin.com/in/joao-dos-santos-silva/" target="_blank">
+            <div class="principal__botao-linkedin">              
+              <i class="fa-brands fa-linkedin-in"></i>
+              <p>LinkedIn</p>
+            </div>
+          </a>
+          <a href="https://github.com/Jholsas" target="_blank">
+            <div class="principal__botao-github">
+              <i class="fa-brands fa-github"></i>
+              <p>Github</p>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="principal__right">
+        <img src="./assets/code.png" alt="Two developers working on a web project." data-tilt>
+      </div>
+      <div class="scroll" data-menu="suave">
+        <a href="#sobre">
+          <p> scroll down </p> <img src="./assets/scroll.png" alt="Arrow indicating to scroll the screen down">
+        </a>
+      </div>
+    </section>
+    <section class="sobre-mim" id="sobre" data-anime="js-scroll">
+      <div class="sobre-mim__foto">
+        <img src="https://github.com/Jholsas.png" alt="A selfie by João Dos Santos Silva" />
+      </div>
+      <div class="sobre-mim__descricao">
+        <h1>About Me</h1>
+        <h2>Toronto, Canada</h2>
+        <p>Coding is my passion. I love the challenge of creating efficient and well-written code, and the sense of
+          accomplishment that comes with seeing my work come to life on the screen. Whether it's working on a
+          large-scale project or experimenting with new technologies, I am always eager to dive into the code and bring
+          my ideas to fruition.</p>
+        <p>I'm a Bachelor of Computer Science, recently graduated from Lambton College with a degree in Computer
+          Programmer and with over 6 years of experience as an ERP developer in Brazil. I have a solid understanding of
+          business process management and how information systems can be used to increase efficiency. Furthermore, </p>
+        <p>I am excited to apply my skills and knowledge to a web developer career in Canada.</p>
+        </p>
+        <div class="sobre-mim__descricao-buttons">
+          <a href="./assets/JOAO DOS SANTOS SILVA - RESUME.pdf" download="">
+            <div class="sobre-mim__descricao-buttons-curriculo">
+              <i class="fa-solid fa-cloud-arrow-down"></i>
+              <p>Resume</p>
+            </div>
+          </a>
+          <a href="mailto: jholsas@gmail.com?subject=João, I came for your portfolio!" target="_blank">
+            <div class="sobre-mim__descricao-buttons-email">
+              <i class="fa-solid fa-envelope"></i>
+              <p>E-mail</p>
+            </div>
+          </a>
+        </div>
+
+      </div>
+    </section>
+    <section class="experiencia" id="experiencia" data-anime="js-scroll">
+      <h1>Experience</h1>
+      <div class="experiencia__wrapper">
+        <section class="experiencia__lugares">
+          <ul data-tab="menu">
+            <li>&#128064&#128064</li>
+            <li>Ethosx </li>
+            <li>Prox </li>
+            <li>Swot-IT </li>
+            <li>Grant Thornton </li>
+          </ul>
+        </section>
+        <div class="experiencia__descricao" data-tab="content">
+          <section data-anime="show-right">
+            <h2>In search of my first official experience in "CANADA"</h2>
+            <p class="experiencia__descricao-local">Who knows in your company?</p>
+            <p>Feel free to contact me. I will be delighted to hear from you. Whether you have questions or want to chat
+              about software development and tech, shoot me a message jholsas@gmail.com &#10024</p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Full Stack Developer</h2>
+            <span>Jun 2021 - Oct.2021</span>
+            <p class="experiencia__descricao-local">ETHOSX - TOTVS Partners </p>
+            <p>ETHOSX Consutoria is a reference channel in the information technology market in Brazil, approved by
+              TOTVS® and specialized in ERP Protheus.
+              Responsible for all aspects of the development process for a web application, including the front-end
+              (client-side) and back-end (server-side) components.</p></br>
+            <p>Responsible for all aspects of the development process for a web application, including the front-end
+              (client-side) and back-end (server-side) components.</p></br>
+            <p class="experiencia__descricao-destaque">Project highlight: New purchase orders feature</p></br>
+            <p><b>Premise:</b> The client demanded an application where it was possible to insert, change, delete,
+              approve, disapprove and monitor the status of purchase orders in real-time. In addition to integrating
+              this new application via API to the company's ERP and CRM.</p>
+            <p><b>Development:</b> Only 2 people on the team – working in sprints (Agile) – prioritized continuous
+              delivery and
+              test automation.</p>
+            <p><b>Outcome:</b> The project was successfully completed 1 month before expected - the code was written
+              cleanly
+              and functionally.</p>
+            <p><b>Learnings:</b> Communicating with stakeholders was key to understanding the requirements and dealing
+              with obstacles immediately – the technology used was complex, but by using good programming practices it
+              was
+              possible to write cleaner functions and use the database more efficiently.</p>
+            <p><b>Skills:</b> GitHub · Agile Methodologies · HTML5 · CSS3 · Vanilla JavaScript · AdvPL · REST APIs ·
+              JSON ·
+              TOTVS Protheus · TOTVS Fluig · SQL Database · Git</p>
+          </section>
+          <section data-anime="show-right">
+            <h2>ERP Developer</h2>
+            <span>Mar 2018 - Jun 2021</span>
+            <p class="experiencia__descricao-local">PROX</p>
+            <p>PROX is an Independent Consultancy specializing in ERP TOTVS® Protheus with the mission of offering the
+              best solutions on the market to optimize processes and thus obtain better results.</p>
+            <p>Responsible for developing and customizing these systems, adapting them to the specific needs of each
+              company. Creation of new modules, integration between systems, and implementation of new features in
+              addition to maintenance and support of the existing system.</p></br>
+            <p class="experiencia__descricao-destaque">Project highlight: Digital Transformation of the HR sector.</p>
+            </br>
+            <p><b>Premise:</b> The HR sector of a large company faced difficulties in carrying out routine processes
+              such as requesting vacations, reimbursement in case of business trips, leave due to illness or pregnancy,
+              layoffs and hiring. Because each of these processes generates a large volume of emails. In addition, much
+              of this information was controlled by spreadsheets, which generated a high risk of data loss and human
+              errors.
+              The client required the automation of these processes, the centralization of information and the creation
+              of digital tools to improve communication and collaboration between teams. In addition to integrating this
+              new application via API to the company's ERP.</p>
+            <p><b>Development:</b> The project was completed - to meet all the requested items were developed an
+              application with five modules, which can be used both on computers and smartphones - In this way,
+              centralized the information, making the process much faster and more efficient.</p>
+            <p><b>Outcome:</b> The project was successfully completed 1 month before expected - the code was written
+              cleanly
+              and functionally.</p>
+            <p><b>Learnings:</b> Communication was fundamental to understanding the HR routines requirements, because it
+              is not only complex, but also has a legal basis, which is why an HR specialist was needed on the team -
+              OutSystems technology is a complex low code tool and was something It was new to me at the time, but I was
+              able to learn how to use it and it was possible to develop user-friendly and responsive applications.</p>
+            <p><b>Skills:</b> OutSystems · HTML · Bootstrap · Figma (Software) · Agile Methodologies · Vanilla
+              JavaScript · AdvPL · SQL Database</p>
+          </section>
+          <section data-anime="show-right">
+            <h2>ERP Developer</h2>
+            <span>Mar 2016 - Mar 2018</span>
+            <p class="experiencia__descricao-local">SWOT-IT</p>
+            <p>SWOT-IT is a systems and business process consultancy with an emphasis on ERP, process mapping, and new
+              integrations.</p>
+            <p>Responsible for implementing, configuring and training employees in the financial, human resources,
+              sales, purchasing, inventory, and production modules.</p></br>
+            <p class="experiencia__descricao-destaque">Project highlight: Automatic collection of fines for car rental
+              companies.</p>
+            </br>
+            <p><b>Premise:</b>The client demanded the automation of the fine collection process because due to the high
+              volume of fines and the delay in the delivery of correspondence, the client was missing the deadline to
+              indicate the motorist responsible for the fine, which generated a great loss for the company.</p>
+            <p><b>Development:</b>2 people on the team - working in sprints (Agile) - prioritized continuous delivery
+              and test automation.</p>
+            <p><b>Outcome:</b>The project was completed - For this purpose, an application was created within the
+              customer's ERP that communicated via API with the traffic department, linked the fine with the customer
+              who rented the car on the day the fine was generated and triggered an e-mail informing that the customer
+              had a fine to pay, in addition to creating an accounts receivable item with the customer's data in the ERP
+              billing module.</p>
+            <p><b>Learnings:</b>The customer's database was long and complex, but I could learn to write cleaner
+              functions and use the database more efficiently.</p>
+            <p><b>Skills:</b> Web Services · AdvPL · REST APIs · SQL Database · SOAP</p>
+          </section>
+          <section data-anime="show-right">
+            <h2>ERP Developer</h2>
+            <span>Jul 2012 - Apr 2016</span>
+            <p class="experiencia__descricao-local">GRANT THORNTON BRASIL</p>
+            <p>Grant Thornton is a top-five global organization in the areas of audit, tax, consulting, transactions and
+              outsourcing. It helps dynamic organizations unlock their growth potential by providing meaningful,
+              forward-looking recommendations.</p>
+            <p>Responsible for programming, configuration, customization and maintenance of the ERP system. I worked on
+              projects in several sectors, such as industry, commerce, finance and health, always seeking to understand
+              the customer's needs to offer customized solutions. In addition, I have experience in integrating ERP
+              Protheus with other systems and applications, including CRM, BI and other systems.</p></br>
+            <p class="experiencia__descricao-destaque">Project highlight: Automated system update.</p>
+            </br>
+            <p><b>Premise:</b>Grant Thornton Companies is a leading consultancy in Brazil. With more than 500 client
+              companies. When the ERP changing versions used to take hundreds of hours to update all client companies.
+              Therefore, it was requested create automation to perform the version change.</p>
+            <p><b>Development:</b>2 people on the team - working in sprints (Agile) - prioritized continuous delivery
+              and test automation.</p>
+            <p><b>Outcome:</b>The project was completed successfully - After the implementation of the automation, the
+              processing time was reduced to 10 hours.</p>
+            <p><b>Learnings:</b>For the correct operation of the application, it was necessary to create several
+              automated backup mechanisms, in addition to learning about security tools to guarantee data consistency.
+            </p>
+            <p><b>Skills:</b> Oracle Database · Kanban · AdvPL · SQL Database</p>
+          </section>
+        </div>
+    </section>
+    </div>
+    </section>
+    <section class="projetos" id="projetos" data-anime="js-scroll">
+      <h1>Projects</h1>
+      <div class="projetos__wrapper">
+        <section class="projetos__card">
+          <a href="https://github.com/Jholsas/organo" target="_blank">
+            <img src="./assets/organo.png" alt="" class="projeto-img" />
+          </a>
+          <h2>Organo</h2>
+          <p>In this project, an application was created to generate the organization chart of a company.</p>
+          <p>This project was developed from the React with Javascript ES6+ course, to put into practice my initial studies on React.</p>
+          <p>Project created based on a Figma project.</p>
+          <p>This landing page is designed for smartphones, tablets and desktops.</p>
+          <span>Stacks: React, JavaScript, HTML5, CSS3.</span>
+          <a href="https://organo-seven-beta.vercel.app/" target="_blank">
+            <div class="projetos__card-button">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Live
+            </div>
+          </a>
+        </section>
+        <section class="projetos__card">
+          <a href="https://github.com/Jholsas/secret-number" target="_blank">
+            <img src="./assets/find-number-game.png" alt="" class="projeto-img" />
+          </a>
+          <h2>Secret Number Game</h2>
+          <p>This project created a secret number-guessing game using voice commands.</p>
+          <p>For the recognition of the voice commands, the Web Speech API was used, HTML5, CSS3 and JavaScript for creating the pages.</p>          
+          <span>Stacks: Vanilla JavaScript, Web Speech API,HTML5, CSS3.</span>
+          <a href="https://secret-number-nym0vtk41-jholsas.vercel.app/" target="_blank">
+            <div class="projetos__card-button">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Live
+            </div>
+          </a>
+        </section>
+        <section class="projetos__card">
+          <a href="https://github.com/Jholsas/book_store" target="_blank">
+            <img src="./assets/alura-book.png" alt="" class="projeto-img" />
+          </a>
+          <h2>Book Store - Alura Books</h2>
+          <p>In this project, an e-commerce site was created for Alura Books, an online technology bookstore.</p>
+          <p>Using the mobile first methodology and using a Figma project as a basis.</p>
+          <p>This landing page is designed for Smartphones, Tablets and Desktops.</p>          
+          <span>Stacks: React, JavaScript, HTML5, CSS3.</span>
+          <a href="https://book-store-jholsas.vercel.app/" target="_blank">
+            <div class="projetos__card-button">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Live
+            </div>
+          </a>
+        </section>
+        <section class="projetos__card">
+          <a href="https://github.com/Jholsas/website_promote" target="_blank">
+            <img src="./assets/alura-plus.png" alt="" class="projeto-img" />
+          </a>
+          <h2>Promo Web Page - Alura Plus</h2>
+          <p>A website to promote Alura Plus, a streaming platform with Alura's educational content.</p>
+          <p>In this project, create a homepage of a Figma project.</p>
+          <p>A landing page is designed for desktops.</p>          
+          <span>Stacks: HTML5, CSS3.</span>
+          <a href="https://aluraplus-jholsas.vercel.app/" target="_blank">
+            <div class="projetos__card-button">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              Live
+            </div>
+          </a>
+        </section>
+      </div>
+      
+    </section>
+
+    <footer>
+      <div class="footer__container">
+        <p>
+          Made with <i class="fa-solid fa-heart"></i> and
+          <i class="fa-solid fa-mug-hot"></i>, <a href="https://www.linkedin.com/in/joao-dos-santos-silva/" target="_blank"><span> João Dos Santos Silva </span></a>
+        </p><br>
+        <p>Copyright <i class="fa-regular fa-copyright"></i>2023.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="./js/script.js" type="module"></script>
+  <script src="./js/modules/vanilla-tilt.min.js"></script>
+</body>
+
+</html>
